@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Cutiee 🎀✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #ffdee9 0%, #b5fffc 100%);
+            color: #444;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ff4da6;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+
+        .heart {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20px;
+            animation: beat 1.5s infinite;
+            color: #ff4da6;
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Floating hearts */
+        .floating-heart {
+            position: fixed;
+            bottom: -10px;
+            left: 50%;
+            color: #ff4da6;
+            font-size: 20px;
+            opacity: 0.7;
+            animation: floatUp 6s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateX(0) translateY(0) scale(0.8);
+                opacity: 0.9;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-50px) translateY(-800px) scale(1.6);
+                opacity: 0;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Floating hearts script -->
+<script>
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("floating-heart");
+        heart.innerHTML = "💖";
+
+        // random horizontal position
+        heart.style.left = Math.random() * 100 + "vw";
+
+        // random size
+        heart.style.fontSize = (20 + Math.random() * 25) + "px";
+
+        // random animation duration
+        heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+        document.body.appendChild(heart);
+
+        // remove after animation ends
+        setTimeout(() => heart.remove(), 8000);
+    }
+
+    // create hearts every 400ms
+    setInterval(createHeart, 400);
+</script>
+
+
+<div class="container">
+    <h1>🎀✨ Happy Birthday Cutiee ✨🎀</h1>
+
+    <div class="message">
+A Very Happy Birthday To You Cutiee Girl✨🎀.....May God Bless You With Everything...✨🥹
+Evry Happiness..Everyything uh Need In ur Special Lifee✨🫂.....Today 29th November Is Ur Day....✨🥹
+So Today No Stress No Chik Chik No Mach Mach......Only Youiii Smileee Nd Laugh Nd Stay Happy✨❤️ 
+Nd Enjoy This Day.....🥹🥹....
+
+I Know That Uh Know What I am Writing In This Paraa....As I Write Always The Sames But Still...🥲
+Youii Are The Most Special Person In My Existing Lifee....✨I Will Never Find The Same Person As Youu 
+Nd Tbh I Didn't Want To🎀....Youi r A Very Kind Hearted Person I Have Ever Met✨.....
+Talking With uh Make Me Happy....🎀✨Nd I Don't Know What If........Let It Ne Blank
+
+So Meeting Youiii Was The Best Thing That Happened In My Existing Life🎀✨ 
+Although We Were Happy Nd We Are Still Happy.... Atleast Youii Aree🫂 
+Nd Thats All That Matters To Mee....
+All From The Starting I Just Wanted Youii To Be Happy.... 
+Whether I Am Part Of Ur Life Or Not....
+I Always Want Youiii To Keep That Ravishing Smile On Ur Facee...
+With a Cutieee Dimplee On Ur Cheekss...🥹✨....
+That Smilee Suits Youiii...✨🥹
+
+I Am Sorryyy I Will not Be Able To Meet Youii On This Birthday✨🫂
+Nd Maybe This Was Our Last Birthdays....
+Cuz Maybeee....I Would Be Gone Next Year...Or I Will Be Here But On Bed🥲🥲....
+But Don't Worryyy Ur Gifts Nd Cakee Are Pending...
+Nd Whenever We Meet We Gonna Celebrate 29th November....🥹🥹
+
+I Hope.... Everything Will Be Fine In Ur Life....
+I Wish Uh Never Get Hurt By Anybody.....
+I Wish Uh Stay Strong In Ur Sickness...
+I Wish Uh Stay Strong In Hard Moments....
+I Wish That Hard Moments Never Gets In Ur Beautiful Life....
+I Wish You Always Stay Happy...Nd Keep Smiling....
+As I Already Told Uh Smile Suits Uhh....✨🫂🎀
+
+.......Maybe In Another Lifeee.....✨🧿...... 
+A Very Very Happy Birthday To Youiii QT✨🥹....Enjoy Ur Day✨🫂
+    </div>
+
+    <div class="heart">💖</div>
+
+    <div class="footer">
+        Made With Lots Of Love 💗✨
+    </div>
+</div>
+
+</body>
+</html>
